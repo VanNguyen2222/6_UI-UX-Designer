@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Sora-SemiBold";
+  src: url("../assets/fonts/Sora-SemiBold.ttf") format("truetype");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}

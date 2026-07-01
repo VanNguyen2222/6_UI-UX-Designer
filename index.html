@@ -5,10 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI UX Designer</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/main.js" defer></script>
 </head>
 
 <body>
+    <div class="container">
+        <header class="header" id="home">
+            <div class="wrapper">
+                <div class="header-navbar__logo"> <a href="/" class="header-logo__link"><img
+                            src="./assets/icons/logo.svg" alt="" /><span class="header-logo__text"><strong>Hano
+                                Kurou</strong><span>ui/ux
+                                designer</span></span></a>
+                </div>
 
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <img src="./assets/icons/menu.svg" alt="">
+                </button>
+
+                <nav class="header-navbar__menus">
+                    <ul>
+                        <li><a href="#home" class="nav__link active">Home</a></li>
+                        <li><a href="#about" class="nav__link">About</a></li>
+                        <li><a href="#project" class="nav__link">Project</a></li>
+                        <li><a href="#service" class="nav__link">Service</a></li>
+                        <li><a href="#testimonial" class="nav__link">Testimonial</a></li>
+                        <li><a href="#article" class="nav__link">Article</a></li>
+                    </ul>
+                    <div class="header__actions">
+                        <button class="button button--primary"><img src="./assets/icons/mail.svg" alt="">Send
+                            message</button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+        </main>
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="header-navbar__logo"><a href="/" class="header-logo__link"><img
+                            src="./assets/icons/logo.svg" alt="" /><span
+                            class="header-logo__text only-footer"><strong>Hano
+                                Kurou</strong><span>ui/ux
+                                designer</span></span></a>
+                </div>
+
+                <nav class="header-navbar__menus only-footer">
+                    <ul>
+                        <li><a href="#home" class="nav__link">Home</a></li>
+                        <li><a href="#about" class="nav__link">About</a></li>
+                        <li><a href="#project" class="nav__link">Project</a></li>
+                        <li><a href="#service" class="nav__link">Service</a></li>
+                        <li><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <p class="footer-copyright">© 2022 Marvin Richard</p>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
