@@ -30,6 +30,10 @@ p {
   margin: 0;
 }
 
+h1 {
+  font-weight: 600;
+}
+
 ul,
 ol {
   margin: 0;
@@ -64,6 +68,10 @@ button {
   cursor: pointer;
   border: none;
   background: transparent;
+}
+
+figure {
+  margin: 0;
 }
 
 .wrapper {
@@ -101,12 +109,12 @@ button {
 
 .button--secondary {
   color: #ffffff;
-  background-color: #132238;
+  background-color: #9249f2;
 }
 
 .button--secondary:hover {
-  background-color: #9249f2;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #9249f2;
 }
 
 /* header */
@@ -175,6 +183,10 @@ button {
 
 .header-logo__text strong {
   font-size: 20px;
+}
+
+.header__actions button:hover img {
+  content: url(../assets/icons/mail_hover.svg);
 }
 
 /* footer */
