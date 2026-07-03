@@ -31,7 +31,16 @@ p {
 }
 
 h1 {
-  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.125;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 18px;
 }
 
 ul,
@@ -122,6 +131,10 @@ figure {
 .header {
   backdrop-filter: blur(64px);
   background-color: #ffffffbf;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .header .wrapper {
@@ -177,16 +190,27 @@ figure {
 }
 
 .nav__link:hover {
-  color: #132238;
-  font-weight: 600;
+  text-shadow: 0px 0px 1px #132238;
+  transition: text-shadow 0.5s ease;
 }
 
 .header-logo__text strong {
   font-size: 20px;
 }
 
-.header__actions button:hover img {
-  content: url(../assets/icons/mail_hover.svg);
+.header__action-icon {
+  width: 24px;
+  height: 24px;
+  mask-image: url(../assets/icons/mail.svg);
+  -webkit-mask-image: url(../assets/icons/mail.svg);
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  background-color: #9249f2;
+}
+
+.header__actions a:hover .header__action-icon {
+  background-color: #ffffff;
 }
 
 /* footer */
@@ -229,6 +253,18 @@ figure {
 @media (min-width: 768px) {
   .footer .wrapper {
     flex-direction: row;
+  }
+
+  h1 {
+    font-size: 64px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 20px;
   }
 }
 
