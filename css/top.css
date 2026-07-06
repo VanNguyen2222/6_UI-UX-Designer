@@ -1260,6 +1260,12 @@
   padding: 12px 18px;
 }
 
+.section-contact__form-item input:focus-visible,
+.section-contact__form-item select:focus-visible,
+.section-contact__form-item textarea:focus-visible {
+  outline-color: var(--color-primary);
+}
+
 .span-12 {
   grid-column: span 12;
 }

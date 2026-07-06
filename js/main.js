@@ -1,7 +1,7 @@
  const navLinks = document.querySelectorAll('.nav__link');
  const menuBtn = document.querySelector(".mobile-menu-btn");
-const mobileMenu = document.querySelector(".mobile-menu");
-const closeBtn = document.querySelector(".mobile-menu__close");
+const mobileMenu = document.querySelector(".header-navbar__menus");
+const closeBtn = document.querySelector(".mobile-close-btn");
 
 
 navLinks.forEach((nav)=>{
@@ -21,3 +21,9 @@ closeBtn.addEventListener("click", () => {
   mobileMenu.classList.remove("active");
 });
 
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 980) {
+    mobileMenu.classList.remove("active");
+  }
+});

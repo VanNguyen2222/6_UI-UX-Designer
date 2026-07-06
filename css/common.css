@@ -150,7 +150,38 @@ figure {
 }
 
 .header-navbar__menus {
-  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(calc(-100% - 32px));
+  transition: transform 0.35s;
+  z-index: 999;
+  height: 100dvh;
+}
+
+.header-navbar__menus-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header-navbar__menus.active {
+  transform: translateY(0);
+  background-color: var(--color-white);
+  overflow-y: scroll;
+  padding: 16px;
+  gap: 32px;
+}
+
+.header-navbar__menus.active ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .header-logo__link {
@@ -178,7 +209,7 @@ figure {
   color: #7b848b;
 }
 
-.header-navbar__menus ul {
+.header-navbar__menus-list {
   display: flex;
   gap: 12px;
   align-items: center;
@@ -186,7 +217,27 @@ figure {
   justify-content: center;
 }
 
+.header-navbar__menus.active .header-navbar__menus-list li {
+  width: 100%;
+}
+
+.header-navbar__menus.active .header-navbar__menus-list li a {
+  padding: 16px;
+  width: 100%;
+  transition: hover 0.3s ease;
+  display: inline-block;
+}
+
+.header-navbar__menus.active .header-navbar__menus-list li:hover {
+  background-color: var(--color-background);
+}
+
 .mobile-menu-btn {
+  width: 48px;
+}
+
+.mobile-close-btn {
+  display: block;
   width: 48px;
 }
 
@@ -275,11 +326,24 @@ figure {
 
 @media (min-width: 980px) {
   .header-navbar__menus {
-    display: flex;
+    position: static;
+    inset: auto;
+    transition: none;
+    transform: none;
+    flex-direction: row;
+    flex: 1;
+    background-color: transparent;
+    height: max-content;
+    overflow-y: hidden;
+    justify-content: flex-end;
+  }
+
+  .header-navbar__menus-wrapper {
+    align-items: center;
   }
 
   .header-navbar__menus,
-  .header-navbar__menus ul {
+  .header-navbar__menus-list {
     gap: 32px;
   }
 
