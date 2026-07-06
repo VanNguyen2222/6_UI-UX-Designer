@@ -5,19 +5,24 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: var(--font-size-base);
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   min-width: 320px;
-  font-family: "Sora-SemiBold", sans-serif;
-  font-size: 16px;
-  font-weight: normal;
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
   line-height: 1.5;
-  color: #132238;
-  background-color: #ffffff;
+  color: var(--color-text);
+  background-color: var(--color-white);
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 h1,
@@ -98,32 +103,32 @@ figure {
   min-height: 48px;
   padding-inline: 24px;
   border-radius: 8px;
-  border: 2px solid #9249f2;
-  font-weight: 500;
+  border: 2px solid var(--color-primary);
+  font-weight: var(--font-weight-medium);
   font-size: 14px;
   transition: all 0.3s ease;
   gap: 8px;
-  font-weight: 600;
+  font-weight: var(--font-weight-semi-bold);
 }
 
 .button--primary {
-  color: #9249f2;
+  color: var(--color-primary);
   background-color: transparent;
 }
 
 .button--primary:hover {
-  color: #ffffff;
-  background-color: #9249f2;
+  color: var(--color-white);
+  background-color: var(--color-primary);
 }
 
 .button--secondary {
-  color: #ffffff;
-  background-color: #9249f2;
+  color: var(--color-white);
+  background-color: var(--color-primary);
 }
 
 .button--secondary:hover {
-  background-color: #ffffff;
-  color: #9249f2;
+  background-color: var(--color-white);
+  color: var(--color-primary);
 }
 
 /* header */
@@ -156,7 +161,7 @@ figure {
 
 .header-logo__link img {
   padding: 16px;
-  background-color: #9249f2;
+  background-color: var(--color-primary);
   border-radius: 8px;
   box-shadow: 0px 8px 24px 0px #8a43ff3d;
 }
@@ -186,11 +191,11 @@ figure {
 }
 
 .nav__link {
-  color: #556070;
+  color: var(--color-text-100);
 }
 
 .nav__link:hover {
-  text-shadow: 0px 0px 1px #132238;
+  text-shadow: 0px 0px 1px var(--color-text);
   transition: text-shadow 0.5s ease;
 }
 
@@ -206,17 +211,17 @@ figure {
   mask-size: contain;
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
-  background-color: #9249f2;
+  background-color: var(--color-primary);
 }
 
 .header__actions a:hover .header__action-icon {
-  background-color: #ffffff;
+  background-color: var(--color-white);
 }
 
 /* footer */
 
 .footer {
-  background-color: #132238;
+  background-color: var(--color-text);
   box-shadow: 0px 1px 0px 0px #2b384c inset;
 }
 
@@ -230,7 +235,7 @@ figure {
 }
 
 .header-logo__text.only-footer strong {
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .only-footer .nav__link {
@@ -238,7 +243,7 @@ figure {
 }
 
 .header-navbar__menus.only-footer .nav__link:hover {
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .header-navbar__menus.only-footer {
