@@ -446,27 +446,71 @@
   </section>
 
   <section class="section-contact">
+    <div class="section-contact-bg"></div>
     <div class="wrapper">
       <div class="section-contact__content">
         <h3 class="section-contact__content-title">Have a project or question in mind? Just send me a message.</h3>
-        <p class="section-contact__content-description"></p>
-        <a href="tel:+84987654321">
-          <img src="./assets/icons/phone.svg" alt="">
-          <div><span>Call me now</span><span>+1-202-555-0190</span></div>
-        </a>
-        <a href="mailto:hotro@example.com">
-          <img src="./assets/icons/mail.svg" alt="">
-          <div><span>Chat with me</span><span>kevin.gilbert@gmail.com</span></div>
-        </a>
-        <div>
+        <p class="section-contact__content-description">Do you fancy saying hi to me or do you want to get started
+          with
+          your project and you need my help? Feel free to contact me. I will reply within 48 hours.</p>
+        <div class="section-contact__content-info">
+          <a href="tel:+1-202-555-0190" class="section-contact__content-item">
+            <img src="./assets/icons/phone.svg" alt="">
+            <p><span>Call me now</span><span>+1-202-555-0190</span></p>
+          </a>
+          <a href="mailto:kevin.gilbert@gmail.com" class="section-contact__content-item">
+            <img src="./assets/icons/mail.svg" alt="">
+            <p><span>Chat with me</span><span>kevin.gilbert@gmail.com</span></p>
+          </a>
+        </div>
+        <div class="section-contact__content-socials">
           <p>Follow me on social media</p>
-          <ul>
-            <li></li>
+          <ul class="section-contact__socials-list">
+            <li class="section-contact__socials-item"><a href="#" target="_blank"><span
+                  class="section-contact__socials-icon socials-icon--facebook"></span></a></li>
+            <li class="section-contact__socials-item"><a href="#" target="_blank"><span
+                  class="section-contact__socials-icon socials-icon--twitter"></span></a></li>
+            <li class="section-contact__socials-item"><a href="#" target="_blank"><span
+                  class="section-contact__socials-icon socials-icon--in"></span></a></li>
+            <li class="section-contact__socials-item"><a href="#" target="_blank"><span
+                  class="section-contact__socials-icon socials-icon--instagram"></span></a></li>
+            <li class="section-contact__socials-item"><a href="#" target="_blank"><span
+                  class="section-contact__socials-icon socials-icon--unsplash"></span></a></li>
           </ul>
         </div>
       </div>
-      <form action="" class="section-contact__form">
+      <div class="section-contact__line"></div>
+      <form action="/" class="section-contact__form">
+        <h3 class="section-contact__form-title">Just say 👋 Hi</h3>
+        <div class="section-contact__form-group">
+          <div class="section-contact__form-item span-6">
+            <input type="text" id="name" name="name" placeholder="Full Name">
+          </div>
+          <div class="section-contact__form-item span-6">
+            <input type="email" id="email" name="email" placeholder="Email Adress">
+          </div>
+          <div class="section-contact__form-item span-12">
+            <input type="text" id="subject" name="subject" placeholder="Subject">
+          </div>
 
+          <div class="section-contact__form-item span-6">
+            <select class="" name="services" id="services">
+              <option value="volvo">Services</option>
+              <option value="saab">Saab</option>
+            </select>
+          </div>
+          <div class="section-contact__form-item span-6">
+            <select name="budgets" id="budgets">
+              <option value="volvo">Budgets</option>
+              <option value="saab">Saab</option>
+            </select>
+          </div>
+          <div class="section-contact__form-item span-12">
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Message"></textarea>
+          </div>
+        </div>
+        <div class="section-contact__form-action"><button type="submit" class="button button--secondary">Send
+            Message<span class="section-contact__form-icon"></span></button></div>
       </form>
     </div>
   </section>
