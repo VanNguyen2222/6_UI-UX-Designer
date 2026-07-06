@@ -25,6 +25,11 @@ body {
   overflow-x: hidden;
 }
 
+.scroll-hidden::-webkit-scrollbar {
+  width: 0;
+  opacity: 0;
+}
+
 h1,
 h2,
 h3,
@@ -160,6 +165,10 @@ figure {
   transition: transform 0.35s;
   z-index: 999;
   height: 100dvh;
+  background-color: var(--color-white);
+  overflow-y: scroll;
+  padding: 16px;
+  gap: 32px;
 }
 
 .header-navbar__menus-wrapper {
@@ -170,10 +179,6 @@ figure {
 
 .header-navbar__menus.active {
   transform: translateY(0);
-  background-color: var(--color-white);
-  overflow-y: scroll;
-  padding: 16px;
-  gap: 32px;
 }
 
 .header-navbar__menus.active ul {
@@ -298,7 +303,12 @@ figure {
 }
 
 .header-navbar__menus.only-footer {
+  justify-content: center;
+}
+
+.header-navbar__menus.only-footer ul {
   display: flex;
+  gap: 24px;
 }
 
 .footer-copyright {
@@ -347,7 +357,8 @@ figure {
     gap: 32px;
   }
 
-  .mobile-menu-btn {
+  .mobile-menu-btn,
+  .mobile-close-btn {
     display: none;
   }
 }
