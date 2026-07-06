@@ -298,17 +298,15 @@ figure {
   color: #87909d;
 }
 
-.header-navbar__menus.only-footer .nav__link:hover {
-  color: var(--color-white);
-}
-
-.header-navbar__menus.only-footer {
+.footer-navbar__menus ul{
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-.header-navbar__menus.only-footer ul {
-  display: flex;
-  gap: 24px;
+.footer-navbar__menus .nav__link:hover {
+  color: var(--color-white);
 }
 
 .footer-copyright {
