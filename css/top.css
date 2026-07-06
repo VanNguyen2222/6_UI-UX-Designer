@@ -1017,7 +1017,6 @@
   gap: 20px;
 }
 
-.section-articles__item-date time,
 .section-articles__item-date span {
   display: inline-flex;
   gap: 8px;
