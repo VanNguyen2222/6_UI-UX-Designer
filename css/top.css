@@ -162,11 +162,18 @@
 
 .section-project__title {
   text-align: center;
+  padding-inline: 16px;
 }
 
 .swiper {
- overflow: hidden;
- margin-top: 64px;
+  overflow: hidden;
+  margin-top: 64px;
+  margin-left: 100px;
+
+}
+
+.section-testimonial__slider.swiper-wrapper{
+  margin-left: 100px;
 }
 
 .section-project__slider.swiper-slide{
@@ -297,9 +304,6 @@
   box-shadow: 0px 24px 88px 0px #13223814;
   background-color: #ffffffb2;
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 .section-designer__content {
@@ -311,7 +315,6 @@
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .section-designer__socials-list li {
@@ -1121,9 +1124,11 @@
   width: 100%;
 }
 
-.section-contact__content-title {
+.section-contact__content-title,
+.section-contact__form-title {
   font-size: 24px;
 }
+
 
 .section-contact__content-description {
   font-weight: var(--font-weight-small);
@@ -1251,10 +1256,6 @@
   gap: 16px;
 }
 
-.section-contact__form-title {
-  font-size: 24px;
-}
-
 .section-contact__form-item input,
 .section-contact__form-item select,
 .section-contact__form-item textarea {
@@ -1306,11 +1307,21 @@
   background-color: var(--color-line);
 }
 
+@media (min-width: 375px) {
+  /* section designer */
+  .section-designer__socials {
+    width: max-content;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+}
+
+
 @media (min-width: 768px) {
   /* section designer */
   .section-designer__socials {
-    width: fit-content;
-    left: 28%;
     padding: 32px;
     bottom: 10%;
   }
@@ -1394,7 +1405,6 @@
 
   .section-designer__socials.only-power {
     bottom: -70px;
-    left: 60px;
   }
 
   /* section contact */
@@ -1469,6 +1479,11 @@
     max-width: 536px;
   }
 
+  .section-designer__socials.only-power {
+    left: 0;
+    transform: translateX(0);
+  }
+
   /* section contact */
   .section-contact .wrapper {
     flex-direction: row;
@@ -1538,10 +1553,6 @@
 
   .section-designer__image-bg img {
     width: 100%;
-  }
-
-  .section-designer__socials {
-    left: 18%;
   }
 }
 
