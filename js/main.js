@@ -15,15 +15,35 @@ navLinks.forEach((nav)=>{
 
 menuBtn.addEventListener("click", () => {
   mobileMenu.classList.add("active");
+  document.body.classList.add("scroll-hidden");
 });
 
 closeBtn.addEventListener("click", () => {
   mobileMenu.classList.remove("active");
+  document.body.classList.remove("scroll-hidden");
 });
 
 
 window.addEventListener("resize", () => {
   if (window.innerWidth >= 980) {
     mobileMenu.classList.remove("active");
+    document.body.classList.remove("scroll-hidden");
   }
 });
+
+const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
+  speed: 600,
+  slidesPerView: "auto",
+  spaceBetween: 24,
+  watchOverflow: false,
+  centeredSlides: true,
+  
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+

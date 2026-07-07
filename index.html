@@ -5,19 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UI UX Designer</title>
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/variables.css">
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/top.css">
+  <script src="./js/swiper-bundle.min.js" defer></script>
   <script src="./js/main.js" defer></script>
 </head>
 
-<body class="scroll-hidden">
+<body>
   <div class="container">
     <header class="header" id="home">
       <div class="wrapper">
         <div class="header-navbar__logo">
           <a href="/" class="header-logo__link">
-            <img src="./assets/icons/logo.svg" alt="" />
+            <img src="./assets/icons/logo.svg" alt="Logo" >
             <span class="header-logo__text">
               <strong>Hano Kurou</strong>
               <span>ui/ux designer</span>
@@ -108,52 +110,99 @@
       <section id="project" class="section-project">
         <div class="wrapper">
           <h2 class="section-project__title">Recent Project</h2>
-          <ul class="section-project__slider">
-            <li class="project-card">
-              <figure class="project-card__image">
-                <img src="./assets/icons/project-card-one.png" alt="">
-              </figure>
-              <div class="project-card__content">
-                <span class="project-card__content-type">UI Design / Brand Identity</span>
-                <h3 class="project-card__title">Merry Christmas - Website</h3>
-                <p class="project-card__description">Nitrx is global social networking website admin
-                  dashboard. Designed to track users, post, story & daily Activities. Hope you guys
-                  like it.</p>
-                <a href="#" class="project-card__link" target="_blank">View Case Study<img
-                    src="./assets/icons/arrow-right.svg" alt=""></a>
-              </div>
-            </li>
-            <li class="project-card">
-              <figure class="project-card__image">
-                <img src="./assets/icons/project-card-two.png" alt="">
-              </figure>
-              <div class="project-card__content">
-                <span class="project-card__content-type">UI Design / UX Design</span>
-                <h3 class="project-card__title">Relik - Admin Dashboard</h3>
-                <p class="project-card__description">👉 Relik is a beautiful, simple,
-                  developer-friendly, highly customizable admin dashboard template with a 💎
-                  high-quality UI & well-organized Figma file🔥.</p>
-                <a href="#" class="project-card__link" target="_blank">View Case Study<img
-                    src="./assets/icons/arrow-right.svg" alt=""></a>
-              </div>
-            </li>
-            <li class="project-card">
-              <figure class="project-card__image">
-                <img src="./assets/icons/project-card-three.png" alt="">
-              </figure>
-              <div class="project-card__content">
-                <span class="project-card__content-type">Web Design / Brand Identity</span>
-                <h3 class="project-card__title">Jobpilot - Job Portal</h3>
-                <p class="project-card__description">Jobpilot is a modern high-quality and
-                  well-organized job portal Figma template designed to connect people looking for a
-                  suitable Jobs & Candidates.</p>
-                <a href="#" class="project-card__link" target="_blank">View Case Study<img
-                    src="./assets/icons/arrow-right.svg" alt=""></a>
-              </div>
-            </li>
-          </ul>
-          <div class="section-project__actions"><a href="#" class="previous-button"><img src="./assets/icons/arrow.svg"
-                alt="Previous"></a><a href="#" class="next-button"><img src="./assets/icons/arrow.svg" alt="Next"></a>
+          <div class="swiper">
+            <ul class="swiper-wrapper">
+              <li class="section-project__slider swiper-slide">
+                <div class="project-card">
+                  <figure class="project-card__image">
+                    <img src="./assets/icons/project-card-one.png" alt="">
+                  </figure>
+                  <div class="project-card__content">
+                    <span class="project-card__content-type">UI Design / Brand Identity</span>
+                    <h3 class="project-card__title">Merry Christmas - Website</h3>
+                    <p class="project-card__description" title="Nitrx is global social networking website admin dashboard. Designed to track users, post, story & daily Activities. Hope you guys like it.">
+                      Nitrx is global social networking website admin dashboard. Designed to track users, post, story & daily Activities. Hope you guys like it.
+                    </p>
+                    <a href="#" class="project-card__link" target="_blank">
+                      View Case Study
+                      <img src="./assets/icons/arrow-right.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="section-project__slider swiper-slide">
+                <div class="project-card">
+                   <figure class="project-card__image">
+                    <img src="./assets/icons/project-card-two.png" alt="">
+                  </figure>
+                  <div class="project-card__content">
+                    <span class="project-card__content-type">UI Design / UX Design</span>
+                    <h3 class="project-card__title">Relik - Admin Dashboard</h3>
+                    <p class="project-card__description" title="👉 Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a 💎 high-quality UI & well-organized Figma file🔥.">👉 Relik is a beautiful, simple, developer-friendly, highly customizable admin dashboard template with a 💎 high-quality UI & well-organized Figma file🔥.</p>
+                    <a href="#" class="project-card__link" target="_blank">
+                      View Case Study
+                      <img src="./assets/icons/arrow-right.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="section-project__slider swiper-slide">
+                <div class="project-card">
+                  <figure class="project-card__image">
+                    <img src="./assets/icons/project-card-three.png" alt="">
+                  </figure>
+                  <div class="project-card__content">
+                    <span class="project-card__content-type">Web Design / Brand Identity</span>
+                    <h3 class="project-card__title">Jobpilot - Job Portal</h3>
+                    <p class="project-card__description" title="Jobpilot is a modern high-quality and well-organized job portal Figma template designed to connect people looking for a suitable Jobs & Candidates.">Jobpilot is a modern high-quality and well-organized job portal Figma template designed to connect people looking for a suitable Jobs & Candidates.</p>
+                    <a href="#" class="project-card__link" target="_blank">
+                      View Case Study
+                      <img src="./assets/icons/arrow-right.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </li>
+               <li class="section-project__slider swiper-slide">
+                <div class="project-card">
+                  <figure class="project-card__image">
+                    <img src="./assets/icons/project-card-three.png" alt="">
+                  </figure>
+                  <div class="project-card__content">
+                    <span class="project-card__content-type">Web Design</span>
+                    <h3 class="project-card__title">Jobpilot - Job Portal</h3>
+                    <p class="project-card__description" title="Jobpilot is a modern high-quality and well-organized job portal Figma template designed to connect people looking for a suitable Jobs & Candidates.">Jobpilot is a modern high-quality and well-organized job portal Figma template designed to connect people looking for a suitable Jobs & Candidates.</p>
+                    <a href="#" class="project-card__link" target="_blank">
+                      View Case Study
+                      <img src="./assets/icons/arrow-right.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="section-project__slider swiper-slide">
+                <div class="project-card">
+                  <figure class="project-card__image">
+                    <img src="./assets/icons/project-card-three.png" alt="">
+                  </figure>
+                  <div class="project-card__content">
+                    <span class="project-card__content-type">Web Design / Brand Identity</span>
+                    <h3 class="project-card__title">Jobpilot - Job Portal</h3>
+                    <p class="project-card__description" title="Jobpilot is a modern high-quality and well-organized job portal Figma template designed to connect people looking for a suitable Jobs & Candidates.">Jobpilot is a modern high-quality and well-organized job portal Figma template designed to connect people looking for a suitable Jobs & Candidates.</p>
+                    <a href="#" class="project-card__link" target="_blank">
+                      View Case Study
+                      <img src="./assets/icons/arrow-right.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+           <div class="section-project__actions">
+             <div class="swiper-button-prev">
+              <img src="./assets/icons/arrow.svg" alt="Previous">
+            </div>
+            <div class="swiper-button-next">
+              <img src="./assets/icons/arrow.svg" alt="Next">
+            </div>
+           </div>
           </div>
         </div>
       </section>
@@ -363,39 +412,61 @@
             lacus mollis. Sed lectus nulla, ultrices in gravida in.</p>
         </div>
         <div class="section-testimonial__content">
-          <div class="section-testimonial__slider-wrapper">
-            <div class="section-testimonial__slider">
-              <div class="section-testimonial__slider-item">
-                <img class="section-testimonial__item-img" src="./assets/icons/testimonial-user-two.svg" alt="">
-                <p class="section-testimonial__item-content">“Kevin Did a wonderful job animating set of
-                  static stickers. Work was done very quickly and the quality is outstanding. she managed
-                  to create great looking, flawless animation even with very limited number of frames
-                  allowed per stickers”</p>
-                <p class="section-testimonial__item-name">Cameron Williamson</p>
-                <p class="section-testimonial__item-nickname">Chief Executive Officer of <span>GIGL</span></p>
-              </div>
-              <div class="section-testimonial__slider-item">
-                <img class="section-testimonial__item-img" src="./assets/icons/testimonial-user-two.svg" alt="">
-                <p class="section-testimonial__item-content">“Kevin Did a wonderful job animating set of
-                  static stickers. Work was done very quickly and the quality is outstanding. she managed
-                  to create great looking, flawless animation even with very limited number of frames
-                  allowed per stickers”</p>
-                <p class="section-testimonial__item-name">Cameron Williamson</p>
-                <p class="section-testimonial__item-nickname">Chief Executive Officer of <span>GIGL</span></p>
-              </div>
-              <div class="section-testimonial__slider-item">
-                <img class="section-testimonial__item-img" src="./assets/icons/testimonial-user-two.svg" alt="">
-                <p class="section-testimonial__item-content">“Kevin Did a wonderful job animating set of
-                  static stickers. Work was done very quickly and the quality is outstanding. she managed
-                  to create great looking, flawless animation even with very limited number of frames
-                  allowed per stickers”</p>
-                <p class="section-testimonial__item-name">Cameron Williamson</p>
-                <p class="section-testimonial__item-nickname">Chief Executive Officer of <span>GIGL</span></p>
-              </div>
-            </div>
-            <div class="section-project__actions only-testimonial"><a href="#" class="previous-button"><img
-                  src="./assets/icons/arrow.svg" alt="Previous"></a><a href="#" class="next-button"><img
-                  src="./assets/icons/arrow.svg" alt="Next"></a></div>
+          <div class="swiper">
+            <ul class="swiper-wrapper">
+              <li class="section-testimonial__slider swiper-slide">
+                <div class="section-testimonial__slider-item">
+                  <img class="section-testimonial__item-img" src="./assets/icons/testimonial-user-two.svg" alt="">
+                  <p class="section-testimonial__item-content">“Kevin Did a wonderful job animating set of
+                    static stickers. Work was done very quickly and the quality is outstanding. she managed
+                    to create great looking, flawless animation even with very limited number of frames
+                    allowed per stickers”</p>
+                  <p class="section-testimonial__item-name">Cameron Williamson</p>
+                  <p class="section-testimonial__item-nickname">Chief Executive Officer of <span>GIGL</span></p>
+                </div>
+              </li>
+              <li class="section-testimonial__slider swiper-slide">
+                <div class="section-testimonial__slider-item">
+                  <img class="section-testimonial__item-img" src="./assets/icons/testimonial-user-two.svg" alt="">
+                  <p class="section-testimonial__item-content">“Kevin Did a wonderful job animating set of
+                    static stickers. Work was done very quickly and the quality is outstanding. she managed
+                    to create great looking, flawless animation even with very limited number of frames
+                    allowed per stickers”</p>
+                  <p class="section-testimonial__item-name">Cameron Williamson</p>
+                  <p class="section-testimonial__item-nickname">Chief Executive Officer of <span>GIGL</span></p>
+                </div>
+              </li>
+              <li class="section-testimonial__slider swiper-slide">
+                <div class="section-testimonial__slider-item">
+                  <img class="section-testimonial__item-img" src="./assets/icons/testimonial-user-two.svg" alt="">
+                  <p class="section-testimonial__item-content">“Kevin Did a wonderful job animating set of
+                    static stickers. Work was done very quickly and the quality is outstanding. she managed
+                    to create great looking, flawless animation even with very limited number of frames
+                    allowed per stickers”</p>
+                  <p class="section-testimonial__item-name">Cameron Williamson</p>
+                  <p class="section-testimonial__item-nickname">Chief Executive Officer of <span>GIGL</span></p>
+                </div>
+              </li>
+              <li class="section-testimonial__slider swiper-slide">
+                <div class="section-testimonial__slider-item">
+                  <img class="section-testimonial__item-img" src="./assets/icons/testimonial-user-two.svg" alt="">
+                  <p class="section-testimonial__item-content">“Kevin Did a wonderful job animating set of
+                    static stickers. Work was done very quickly and the quality is outstanding. she managed
+                    to create great looking, flawless animation even with very limited number of frames
+                    allowed per stickers”</p>
+                  <p class="section-testimonial__item-name">Cameron Williamson</p>
+                  <p class="section-testimonial__item-nickname">Chief Executive Officer of <span>GIGL</span></p>
+                </div>
+              </li>
+            </ul>
+              <div class="section-project__actions only-testimonial">
+                <div class="swiper-button-prev">
+                  <img src="./assets/icons/arrow.svg" alt="Previous">
+                </div>
+                <div class="swiper-button-next">
+                  <img src="./assets/icons/arrow.svg" alt="Next">
+                </div>
+           </div>
           </div>
         </div>
       </section>
@@ -565,7 +636,7 @@
       <div class="wrapper">
         <div class="header-navbar__logo">
           <a href="/" class="header-logo__link">
-            <img src="./assets/icons/logo.svg" alt="" />
+            <img src="./assets/icons/logo.svg" alt="" >
             <span class="header-logo__text only-footer">
               <strong>Hano Kurou</strong>
               <span>ui/ux designer</span>
