@@ -288,7 +288,7 @@
 
 .section-designer__socials {
   border-radius: var(--radius-md);
-  padding: 32px;
+  padding: 16px;
   display: flex;
   gap: 16px;
   flex-direction: column;
@@ -298,7 +298,7 @@
   background-color: #ffffffb2;
   width: 100%;
   position: absolute;
-  bottom: 32px;
+  bottom: 0;
   left: 0;
 }
 
@@ -1193,7 +1193,7 @@
   padding: 16px;
   border-radius: var(--radius-xl);
   background-color: var(--color-white);
-  transition: hover 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .section-contact__socials-icon {
@@ -1297,7 +1297,7 @@
 }
 
 .section-contact__form-action button {
-  transition: hover 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .section-contact__line {
@@ -1311,6 +1311,8 @@
   .section-designer__socials {
     width: fit-content;
     left: 28%;
+    padding: 32px;
+    bottom: 10%;
   }
 
   .section-hero__image {
@@ -1538,11 +1540,9 @@
     width: 100%;
   }
 
-    .section-designer__socials {
+  .section-designer__socials {
     left: 18%;
   }
-
-
 }
 
 @media (min-width: 1320px) {

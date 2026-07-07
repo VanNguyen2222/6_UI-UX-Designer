@@ -229,7 +229,7 @@ figure {
 .header-navbar__menus.active .header-navbar__menus-list li a {
   padding: 16px;
   width: 100%;
-  transition: hover 0.3s ease;
+  transition: background-color 0.3s ease;
   display: inline-block;
 }
 
@@ -248,11 +248,11 @@ figure {
 
 .nav__link {
   color: var(--color-text-100);
+  transition: text-shadow 0.5s ease;
 }
 
 .nav__link:hover {
   text-shadow: 0px 0px 1px var(--color-text);
-  transition: text-shadow 0.5s ease;
 }
 
 .header-logo__text strong {
