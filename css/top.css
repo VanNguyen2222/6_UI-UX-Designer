@@ -168,12 +168,6 @@
 .swiper {
   overflow: hidden;
   margin-top: 64px;
-  margin-left: 100px;
-
-}
-
-.section-testimonial__slider.swiper-wrapper{
-  margin-left: 100px;
 }
 
 .section-project__slider.swiper-slide{
@@ -1512,6 +1506,10 @@
 
   .section-articles__item {
     width: calc(429px - 24px * 2 / 3);
+  }
+
+  .section-project .swiper {
+    margin-left: 100px;
   }
 }
 
